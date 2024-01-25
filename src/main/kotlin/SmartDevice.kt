@@ -1,4 +1,8 @@
 class SmartDevice {
+
+    val name = "Android TV"
+    val category = "Entertainment"
+    var deviceStatus = "online"
     fun turnOn() {
         println("Smart device is turned on.")
     }
