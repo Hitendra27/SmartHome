@@ -1,4 +1,4 @@
-class SmartDevice(val name: String, val category: String) {
+open class SmartDevice(val name: String, val category: String) {
 
     var deviceStatus = "online"
 
