@@ -9,11 +9,11 @@ open class SmartDevice(val name: String, val category: String) {
             else -> "unkown"
         }
     }
-    fun turnOn() {
+    open fun turnOn() {
         println("Smart device is turned on.")
     }
 
-    fun turnOff() {
+    open fun turnOff() {
         println("Smart device is turned off.")
     }
 }
