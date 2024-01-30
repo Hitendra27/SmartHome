@@ -1,4 +1,7 @@
 fun main(args: Array<String>) {
-    val smartDevice: SmartDevice = SmartTvDevice("Android Tv", "Entertainment")
+    var smartDevice: SmartDevice = SmartTvDevice("Android Tv", "Entertainment")
+    smartDevice.turnOn()
+
+    smartDevice = SmartLightDevice("Google Light", "Utility")
     smartDevice.turnOn()
 }

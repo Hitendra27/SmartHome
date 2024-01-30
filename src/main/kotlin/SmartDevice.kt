@@ -2,6 +2,8 @@ open class SmartDevice(val name: String, val category: String) {
 
     var deviceStatus = "online"
 
+    open val deviceType = "unknown"
+
     constructor(name: String, category: String, statusCode: Int) : this(name, category) {
         deviceStatus = when (statusCode) {
             0 -> "ofline"
@@ -10,10 +12,10 @@ open class SmartDevice(val name: String, val category: String) {
         }
     }
     open fun turnOn() {
-        println("Smart device is turned on.")
+        deviceStatus = "On"
     }
 
     open fun turnOff() {
-        println("Smart device is turned off.")
+        deviceStatus = "off"
     }
 }
