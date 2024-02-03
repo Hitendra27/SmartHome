@@ -1,6 +1,7 @@
-open class SmartDevice(val name: String, val category: String) {
+open class SmartDevice protected constructor(val name: String, val category: String) {
 
-    var deviceStatus = "online"
+     var deviceStatus = "online"
+        protected set
 
     open val deviceType = "unknown"
 
@@ -17,5 +18,9 @@ open class SmartDevice(val name: String, val category: String) {
 
     open fun turnOff() {
         deviceStatus = "off"
+    }
+
+    open fun printDevice() {
+        print("Device name: $name, category: $category, type: $deviceType")
     }
 }
